@@ -50,7 +50,7 @@ const LoginPage = () => {
         </div>
 
         <div className="form-group mb-3">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">parol</label>
           <input
             type="password"
             id="password"
