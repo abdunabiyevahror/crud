@@ -1,9 +1,9 @@
 import * as yup from "yup";
 
 const personSchema = yup.object().shape({
-  name: yup.string().required("Please fill !"),
+  name: yup.string().required(" toldiring!"),
   age: yup.number().required().positive().integer(),
-  email: yup.string().email("Email must be like this abdulaziz@gmail.com"),
+  email: yup.string().email("shunga oxshash kerak axronbv@gmail.com"),
   website: yup.string().url(),
   date: yup.date().default(function () {
     return new Date();
@@ -36,12 +36,12 @@ const YupPage = () => {
   return (
     <form className="container mt-4" onSubmit={submit}>
       <div className="form-group mb-3">
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">ism</label>
         <input type="text" id="name" name="name" className="form-control" />
       </div>
 
       <div className="form-group mb-3">
-        <label htmlFor="age">Age</label>
+        <label htmlFor="age">yosh</label>
         <input type="number" id="age" name="age" className="form-control" />
       </div>
 
@@ -51,18 +51,18 @@ const YupPage = () => {
       </div>
 
       <div className="form-group mb-3">
-        <label htmlFor="website">Website</label>
+        <label htmlFor="website">Websahifa</label>
         <input id="website" name="website" className="form-control" />
       </div>
 
       <div className="form-group mb-3">
-        <label htmlFor="date">Created at</label>
+        <label htmlFor="date">yaratilgan</label>
         <input type="date" id="date" name="date" className="form-control" />
       </div>
 
       <div className="form-group mb-3">
         <button type="submit" className="btn btn-primary">
-          Send
+          yubor
         </button>
       </div>
     </form>

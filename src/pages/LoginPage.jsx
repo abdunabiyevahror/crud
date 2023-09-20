@@ -8,15 +8,15 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
-      email: "",
-      password: "",
+      email: "axronbv@gmai.com",
+      password: "2008070107",
     },
     validationSchema: yup.object({
-      email: yup.string().email("Must be email").required("Email is required"),
+      email: yup.string().email("Elektron pochta kerak").required("tasdiqlandi"),
       password: yup
-        .string("Password must be string")
-        .required("Password is required")
-        .min(8, "Min length must be 8"),
+        .string("parol string bolishi lozim")
+        .required(" tasdqilandi")
+        .min(8, "minimum8ta"),
     }),
     onSubmit: (values) => {
       axios
@@ -35,7 +35,7 @@ const LoginPage = () => {
     <div className="vh-100 d-flex justify-content-center align-items-center">
       <form className="container w-25 mt-4" onSubmit={formik.handleSubmit}>
         <div className="form-group mb-3">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">elektron pochta</label>
           <input
             type="email"
             id="email"
